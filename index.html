@@ -41,6 +41,23 @@ $(document).ready(function() {
 	});
 	
 }); 
+function browserRedirect() {
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+        window.location.href="http://www.schmittqaq.club/";
+    } else {
+        window.location.href="http://www.schmittqaq.club/";
+    }
+}
+browserRedirect();
 </script>
 </head>
 <body>
@@ -57,18 +74,16 @@ $(document).ready(function() {
 
 			<div id="m_nav_container" class="m_nav">
 			  <ul id="m_nav_list" class="m_nav">
-				<li class="m_nav_item" id="m_nav_item_1"> <a href="#home">Home</a> </li>
-				<li class="m_nav_item" id="moble_nav_item_2"> <a href="#about">About</a> </li>
-				<li class="m_nav_item" id="moble_nav_item_3"> <a href="#statistics">Statistics</a> </li>
-				<li class="m_nav_item" id="moble_nav_item_4"> <a href="#experience">Experience</a> </li>
-				<li class="m_nav_item" id="moble_nav_item_5"> <a href="#projects">Projects</a> </li>
-				<li class="m_nav_item" id="moble_nav_item_6"> <a href="#contact">Contact</a> </li>
+				<li class="m_nav_item" id="m_nav_item_1"> <a href="#home">主页</a> </li>
+				<li class="m_nav_item" id="moble_nav_item_2"> <a href="#about">关于</a> </li>
+				<li class="m_nav_item" id="moble_nav_item_5"> <a href="#projects">项目</a> </li>
+				<li class="m_nav_item" id="moble_nav_item_6"> <a href="#contact">联系我</a> </li>
 			  </ul>
 			</div>
 		<!-- menu -->
 		<div class="container">
 			<div class="agile-logo">
-				<h1><a href="index.html">Creative<span>Resume</span></a></h1>
+				<h1><a href="index.html">Creative<span>简历</span></a></h1>
 			</div>
 			<div class="w3l-banner-grids">
 				<div class="col-md-8 w3ls-banner-right">
@@ -76,8 +91,17 @@ $(document).ready(function() {
 						<img src="images/1.jpg" alt="" />
 					</div>
 					<div class="banner-right-info">
-						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque tellus dignissim dolor dignissim, sit amet convallis nisi dignissim.</h2>
-						<p>Donec dolor felis, consectetur eget massa non, mattis euismod est. Nam augue neque, hendrerit nec scelerisque non, ultrices at ligula. Praesent posuere, turpis eget lobortis elementum, ex ante ultricies ligula, sit amet varius lacus dui in magna. Aliquam erat volutpat. Nulla condimentum, enim vitae congue ultrices, nibh erat efficitur sem, vel iaculis lectus eros in turpis. Aliquam venenatis cursus suscipit.</p>
+						<h2>/ Education&nbsp;&nbsp;教育经历</h2>
+						<p class="banner-right-info-fb">2016/9 - 至今    吉林省经济管理干部学院  |  数字媒体  | 大专</p>
+                        <p>数字媒体应用技术专业 （GPA: 3.5/4.0）</p>
+
+						<h2>/  Experience&nbsp;&nbsp;校园经历</h2>
+                        <p class="banner-right-info-fb">网页后台建设 |  组长</p>
+
+                        <p class="banner-right-info-fb">2016/11- 2017/4</p>
+						<p>- 成立网页制作小组并编写了家具网站（详见我的项目）；</p>
+                        <p class="banner-right-info-fb">2017/9- 2018/9</p>
+                        <p>- 带领网页制作小组编写了音乐点播网站（详见我的项目）；</p>
 					</div>
 					<div class="clearfix"> </div>
 					<div class="w3-button">
@@ -102,24 +126,24 @@ $(document).ready(function() {
 				</div>
 				<div class="col-md-4 w3ls-banner-left">
 					<div class="w3ls-banner-left-info">
-						<h4>Job Title</h4>
-						<p>Web Designer and Developer</p>
+						<h4>职称</h4>
+						<p>Web前端开发人员</p>
 					</div>
 					<div class="w3ls-banner-left-info">
-						<h4>Name</h4>
-						<p>Steve Watson</p>
+						<h4>姓名</h4>
+						<p>SchmittQAQ</p>
 					</div>
 					<div class="w3ls-banner-left-info">
-						<h4>Sex</h4>
-						<p>Male</p>
+						<h4>性别</h4>
+						<p>男</p>
 					</div>
 					<div class="w3ls-banner-left-info">
-						<h4>Address</h4>
-						<p>Eiusmod Tempor inclore Place,Kingsport 56777.</p>
+						<h4>地址</h4>
+						<p>吉林省长春市南关区</p>
 					</div>
 					<div class="w3ls-banner-left-info">
-						<h4>Email Address</h4>
-						<p><a href="mailto:example@email.com">mail@example.com</a></p>
+						<h4>电子邮件</h4>
+						<p><a href="mailto:1050958862@qq.com">1050958862@qq.com</a></p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -127,28 +151,32 @@ $(document).ready(function() {
 		</div>
 	</div>
 	<!-- //banner -->
-	<div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
 	<!-- about -->
 	<div class="about" id="about">
 		<div class="container">
 			<div class="wthree-about-grids">
 				<div class="col-md-6 wthree-about-left">
-					<h3>About Me</h3>
-					<h4>Mauris molestie ultrices molestie. Sed rhoncus interdum ipsum, id fermentum sem pellentesque ut.</h4>
-					<p>Praesent egestas egestas felis, sit amet posuere massa malesuada eget. Phasellus sem urna, euismod sit amet orci laoreet, laoreet molestie purus. Nulla leo purus, blandit nec efficitur tempor, interdum vel enim. <span>Proin mauris mi, lobortis quis quam at, tristique dictum arcu. In lobortis, massa in porta posuere, orci orci tincidunt risus, vitae ultrices enim eros vel lacus.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt tellus at est fermentum ultricies. Cras cursus semper libero. Vivamus non elit a diam elementum vulputate ac quis nisi. Suspendisse tellus massa, tempus in tristique a, eleifend non est. Duis consequat facilisis laoreet. </p>
-				</div >
+					<h3>关于我</h3>
+					<h4>/ Interests&nbsp;&nbsp;兴趣爱好</h4>
+					<p>◆ 听音乐(<a href="https://music.163.com/#/user/home?id=264529415" title="网易云个人主页">网易云个人主页</a>)；</p>
+                    <p>◆ 电影爱好者，经常观看感兴趣的电影;</p>
+					<p>◆ 热爱新鲜事物，喜欢阅读站酷网、Behance、WikiArt、好奇心日报等。</p>
+                    <h4>/ Honors&nbsp;&nbsp;奖项荣誉</h4>
+                    <p>2016/11 信息传媒学院摄影大赛    三等奖</p>
+                    <p>2017/9  信息传媒学院程序设计大赛 三等奖</p>
+                </div >
 				<div class="col-md-6 wthree-about-right">
-					<h3>Skills</h3>
+					<h3>技能</h3>
 					<div class="skills-bar">
 						<section class='bar'>
 						  <section class='wrap'>
 							<div class='wrap_right'>
 							  <div class='bar_group'>
-								<div class='bar_group__bar thin' label='jQuery' show_values='true' tooltip='true' value='343'></div>
+								<div class='bar_group__bar thin' label='JavaScript' show_values='true' tooltip='true' value='343'></div>
 								<div class='bar_group__bar thin' label='AJAX' show_values='true' tooltip='true' value='235'></div>
-								<div class='bar_group__bar thin' label='PHP' show_values='true' tooltip='true' value='675'></div>
-								<div class='bar_group__bar thin' label='SASS' show_values='true' tooltip='true' value='456'></div>
-								<div class='bar_group__bar thin' label='HTML' show_values='true' tooltip='true' value='245'></div>
+								<div class='bar_group__bar thin' label='HTML' show_values='true' tooltip='true' value='675'></div>
+								<div class='bar_group__bar thin' label='PHP' show_values='true' tooltip='true' value='456'></div>
+								<div class='bar_group__bar thin' label='jQuery' show_values='true' tooltip='true' value='245'></div>
 							  </div>
 							</div>
 							<div class='clear'></div>
@@ -161,200 +189,20 @@ $(document).ready(function() {
 		</div>
 	</div>
 	<!-- //about -->
-	<!-- statistics -->
-	<div class="jarallax statistics" id="statistics">
-		<div class="container">
-			<div class="w3-agileits-statistics-heading">
-				<h3>My Statistics</h3>
-			</div>
-			<div class="agile-statistics-grids">
-				<div class="col-sm-4 agile-statistics-grid">
-					<h4>1024</h4>
-					<i class="fa fa-desktop" aria-hidden="true"></i>
-					<p>Projects Complete</p>
-				</div>
-				<div class="col-sm-4 agile-statistics-grid statistics-grid2">
-					<h4>2746</h4>
-					<i class="fa fa-user" aria-hidden="true"></i>
-					<p>Clients</p>
-				</div>
-				<div class="col-sm-4 agile-statistics-grid">
-					<h4>575</h4>
-					<i class="fa fa-trophy" aria-hidden="true"></i>
-					<p>Awards</p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<script src="js/jarallax.js"></script>
-			<script src="js/SmoothScroll.min.js"></script>
-			<script type="text/javascript">
-				/* init Jarallax */
-				$('.jarallax').jarallax({
-					speed: 0.5,
-					imgWidth: 1366,
-					imgHeight: 768
-				})
-			</script>
-		</div>
-	</div>
-	<!-- //statistics -->
-	<!-- experience -->
-	<div class="experience" id="experience">
-		<div class="container">
-			<div class="w3-agileits-statistics-heading experience-heading">
-				<h3>Work Experience</h3>
-			</div>
-			<div class="w3-agile-experience-grids">
-				<div class="experience-top-grids">
-					<div class="col-md-6 experience-grid">
-						<div class="experience-grid-icon icon-left hvr-radial-out">
-							<i class="fa fa-folder-open" aria-hidden="true"></i>
-						</div>
-						<div class="experience-grid-info">
-							<h5>Ut dapibus nisi turpis</h5>
-							<p>Curabitur augue urna, venenatis vel enim at, sodales tempus diam. Aliquam ornare, magna a cursus tempus, arcu massa accumsan justo, non facilisis risus ante vel ex.</p>
-						</div>
-					</div>
-					<div class="col-md-6 experience-grid experience-grid1">
-						<div class="experience-grid-icon icon-left hvr-radial-out">
-							<i class="fa fa-bell" aria-hidden="true"></i>
-						</div>
-						<div class="experience-grid-info">
-							<h5>Ut dapibus nisi turpis</h5>
-							<p>Curabitur augue urna, venenatis vel enim at, sodales tempus diam. Aliquam ornare, magna a cursus tempus, arcu massa accumsan justo, non facilisis risus ante vel ex.</p>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="experience-top-grids">
-					<div class="col-md-6 experience-grid experience-grid2">
-						<div class="experience-grid-icon icon-left hvr-radial-out">
-							<i class="fa fa-comments" aria-hidden="true"></i>
-						</div>
-						<div class="experience-grid-info">
-							<h5>Ut dapibus nisi turpis</h5>
-							<p>Curabitur augue urna, venenatis vel enim at, sodales tempus diam. Aliquam ornare, magna a cursus tempus, arcu massa accumsan justo, non facilisis risus ante vel ex.</p>
-						</div>
-					</div>
-					<div class="col-md-6 experience-grid experience-grid3">
-						<div class="experience-grid-icon icon-left hvr-radial-out">
-							<i class="fa fa-asterisk" aria-hidden="true"></i>
-						</div>
-						<div class="experience-grid-info">
-							<h5>Ut dapibus nisi turpis</h5>
-							<p>Curabitur augue urna, venenatis vel enim at, sodales tempus diam. Aliquam ornare, magna a cursus tempus, arcu massa accumsan justo, non facilisis risus ante vel ex.</p>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //experience -->
-	<!-- feedback -->
-	<div class="jarallax feedback">
-		<div class="container">
-			<div class="w3-agileits-statistics-heading">
-				<h3>Clients Feedback</h3>
-			</div>
-			<div class="agileits-feedback-grids">
-				<div id="owl-demo" class="owl-carousel owl-theme">
-					<div class="item">
-						<div class="feedback-info">
-							<div class="feedback-top">
-								<p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
-							</div>
-							<div class="feedback-grids">
-								<div class="feedback-img">
-									<img src="images/f1.jpg" alt="" />
-								</div>
-								<div class="feedback-img-info">
-									<h5>Peter Parker</h5>
-									<p>Vestibulum</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>	
-					</div>
-					<div class="item">
-						<div class="feedback-info">
-							<div class="feedback-top">
-								<p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
-							</div>
-							<div class="feedback-grids">
-								<div class="feedback-img">
-									<img src="images/f2.jpg" alt="" />
-								</div>
-								<div class="feedback-img-info">
-									<h5>Mary Jane</h5>
-									<p>Vestibulum</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>	
-					</div>
-					<div class="item">
-						<div class="feedback-info">
-							<div class="feedback-top">
-								<p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
-							</div>
-							<div class="feedback-grids">
-								<div class="feedback-img">
-									<img src="images/f3.jpg" alt="" />
-								</div>
-								<div class="feedback-img-info">
-									<h5>Steven Wilson</h5>
-									<p>Vestibulum</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>	
-					</div>
-					<div class="item">
-						<div class="feedback-info">
-							<div class="feedback-top">
-								<p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque. </p>
-							</div>
-							<div class="feedback-grids">
-								<div class="feedback-img">
-									<img src="images/f4.jpg" alt="" />
-								</div>
-								<div class="feedback-img-info">
-									<h5>Peter Parker</h5>
-									<p>Vestibulum</p>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-			<script type="text/javascript">
-				/* init Jarallax */
-				$('.jarallax').jarallax({
-					speed: 0.5,
-					imgWidth: 1366,
-					imgHeight: 768
-				})
-			</script>
-
-		</div>
-	</div>
-	<!-- //feedback -->
 	<!-- projects -->
 	<div class="projects" id="projects">
 		<div class="container">
 			<div class="w3-agileits-statistics-heading experience-heading">
-				<h3>My Projects</h3>
+				<h3>我的项目</h3>
 			</div>
 		</div>
 		<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 					<ul id="myTab" class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">All</a></li>
+						<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">全部</a></li>
 						<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Apps</a></li>
-						<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Widgets</a></li>
-						<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Templates</a></li>
-						<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Other</a></li>
+						<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">小工具</a></li>
+						<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">模板</a></li>
+						<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">其他</a></li>
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
@@ -548,28 +396,28 @@ $(document).ready(function() {
 	<div class="contact" id="contact">
 		<div class="container">
 			<div class="w3-agileits-statistics-heading experience-heading">
-				<h3>Contact Me</h3>
+				<h3>联系我</h3>
 			</div>
 			<div class="contact-form">
 				<form action="#" method="post">
 					<div class="fields-grid">
 						<div class="styled-input agile-styled-input-top">
-							<input type="text" name="Full Name" required="">
+							<input type="text" name="Full Name" required>
 							<label>Full Name</label>
 							<span></span>
 						</div>
 						<div class="styled-input agile-styled-input-top">
-							<input type="text" name="Phone" required=""> 
+							<input type="text" name="Phone" required> 
 							<label>Phone</label>
 							<span></span>
 						</div>
 						<div class="styled-input">
-							<input type="text" name="Email" required=""> 
+							<input type="text" name="Email" required> 
 							<label>Email</label>
 							<span></span>
 						</div> 
 						<div class="styled-input">
-							<input type="text" name="Subject" required="">
+							<input type="text" name="Subject" required>
 							<label>Subject</label>
 							<span></span>
 						</div>
@@ -580,7 +428,7 @@ $(document).ready(function() {
 						<label>Message</label>
 						<span></span>
 					</div>	 
-					<input type="submit" value="SEND">
+					<input type="submit" value="发送">
 				</form>
 			</div>
 		</div>
@@ -589,7 +437,7 @@ $(document).ready(function() {
 	<!-- copyright -->
 	<div class="agileits-w3layouts-footer">
 		<div class="container">
-			<p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+			<p>Copyright &copy; 2018.SchmittQAQ All rights reserved.More Templates <a href="http://www.schmittqaq.club/" target="_blank" title="SchmittQAQ">SchmittQAQ</a></p>
 		</div>
 	</div>
 	<!-- //copyright -->
